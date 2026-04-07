@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
 
         <p className="text-xs text-brand-muted text-center">
-          Built with yt-dlp · For personal use only ·{" "}
+          Built with 💖 by Hardelz · For personal use only ·{" "}
           <a
             href="https://www.youtube.com/t/terms"
             target="_blank"

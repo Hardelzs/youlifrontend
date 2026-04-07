@@ -1,4 +1,6 @@
-export default function Navbar() {
+export default function Navbar({ theme, onToggleTheme }) {
+  const modeLabel = theme === "system" ? "System" : theme === "dark" ? "Dark" : "Light";
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-brand-border bg-brand-dark/80 backdrop-blur-xl">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
@@ -17,10 +19,18 @@ export default function Navbar() {
         {/* Right */}
         <div className="flex items-center gap-3">
           <span className="hidden sm:block text-xs text-brand-muted border border-brand-border rounded-full px-3 py-1">
-            Free · No sign-up
+            sign-up
           </span>
+          <button
+            type="button"
+            onClick={onToggleTheme}
+            className="flex items-center gap-2 rounded-full border border-brand-border bg-[#111111]/70 px-3 py-1 text-xs text-brand-soft transition-colors hover:border-brand-red hover:text-white"
+          >
+            <span>{modeLabel}</span>
+            <span aria-hidden="true">⚙️</span>
+          </button>
           <a
-            href="https://github.com"
+            href="https://github.com/Hardelzs"
             target="_blank"
             rel="noreferrer"
             className="text-brand-soft hover:text-white transition-colors"

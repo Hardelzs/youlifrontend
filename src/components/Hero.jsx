@@ -49,7 +49,7 @@ export default function Hero() {
         <p className="text-brand-soft text-base sm:text-lg max-w-xl mx-auto mb-12 leading-relaxed font-body font-300">
           Paste a playlist URL, pick your format, hit download.
           <br className="hidden sm:block" />
-          No account. No ads. Just music.
+          No ads. Just music.
         </p>
 
         {/* Animated waveform */}
